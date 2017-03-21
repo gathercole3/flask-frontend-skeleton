@@ -1,11 +1,7 @@
-FROM ubuntu:14.04
+FROM python:3.5.3
 MAINTAINER Jacob Gathercole
 
-RUN apt-get update
-RUN apt-get install -y build-essential python3-dev python3-pip
 RUN pip3 -q install gunicorn eventlet
-
-
 
 COPY / /opt/
 

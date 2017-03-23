@@ -1,4 +1,4 @@
-from flask_frontend_skeleton.main import app
+from flask_frontend_skeleton import app
 import unittest
 
 

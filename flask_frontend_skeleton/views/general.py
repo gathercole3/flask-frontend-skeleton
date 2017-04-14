@@ -10,3 +10,7 @@ def check_status():
         "status": "OK",
         "headers": request.headers.to_list(),
     })
+
+@general.route("/tmp")
+def tmp_auto_update_route():
+    return "this is a tmp route"

@@ -10,3 +10,7 @@ def check_status():
         "status": "OK",
         "headers": request.headers.to_list(),
     })
+
+@general.route("/showcase")
+def showcase_temp():
+    return "this is a test route for the plymouth university showcase"
